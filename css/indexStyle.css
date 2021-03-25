@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap'); /*font download from google */
+/* ------------ Mobile first ------------ */
+body{
+  margin: 20px;
+  background-color: #fff;
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+h1{
+    font-family: 'Merriweather', serif;
+    font-size: 45px;
+}
+h2{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+	margin-top: 5px;
+}
+h3{
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+}
+p{
+	font-size: 14px;
+    line-height: 160%;
+}
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+a:hover{
+    text-decoration: underline;
+}
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    flex-direction: row;
+    align-items: center;
+}
+.header_icon{
+    height: 35px;
+    width: auto;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+}
+nav li span{
+    padding-left: 5px;
+}
+li a{
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;
+}
+.cart a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* ---- Menu ---- */
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+}
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: #000;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: blue;
+}
+article.largeTopClass{
+    text-align: center;
+}
+.largeTopClassImg{
+    width: 100%;
+    height: auto;
+}
+.img{
+    width: 100%;
+	height: auto;    
+}
+article#gamesId h2{
+    text-align: left;
+    padding-left: 40px;
+    color: blue;
+}
+ul#games{
+    text-align: left;
+}
+section{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+            "header"
+            "navigation"
+            "main-content"
+            "footer";
+    text-align: center;
+}
+div.main1{
+    grid-area: main-content;
+	grid-gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+div.main1 h2{
+    grid-area: main-content;
+	grid-gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+	margin-top: 5px;
+}
+div.main2{
+    grid-area: main-content;
+	grid-gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;    
+}
+footer{
+	grid-area: footer;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* ----------------- CART PAGE --------------- */
+
+.products-container {
+    max-width: 1100px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.product-header {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px auto;
+}
+.product-title {
+    width: 45%;
+    border-bottom: 1px solid lightgray;
+}
+.price {
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products img {
+    width: 100px;
+}
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+.basketTotalTitle {
+    width: 30%;
+}
+.basketTotal {
+    width: 10%;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body{
+        background-color: #fff;
+    }
+    h1{
+        font-family: 'Merriweather', serif;
+        font-size: 25px;
+    }
+    header.header-container {
+        width: 600px;
+        margin: 0 auto;
+    }
+    section.grid-container{
+        width: 600px;
+        margin: 0 auto;
+    }
+    nav.nav_list{
+        background-color: #fff;
+        flex-direction: row;
+    }
+    article.largeTopClass{
+        text-align: left;
+        width: 600px;
+        margin: 0 auto;
+    }
+    article.textPage{
+        text-align: left;
+        width: 600px;
+        padding-top: 10px;
+        margin: 0 auto;
+        margin-bottom: -10px;
+    }
+    article#gamesId h2{
+        list-style-type: none;
+        text-align: left;
+        padding-left: 40px;
+    }
+    ul#games{
+        list-style-type: none;
+        text-align: left;
+    }
+    hr{
+        width: 600px;
+    }
+    div.main1{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    div.main1 h3{
+        color: blue;
+    }
+    div.main2{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    div.main2 h3{
+        color: blue;
+    }
+    footer{
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+
+    body{
+        background-color: #fff;
+    }
+    h1{
+        font-family: 'Merriweather', serif;
+        font-size: 25px;
+    }
+    header.header-container {
+        width: 1100px;
+        margin: 0 auto;
+    }
+    section.grid-container{
+        width: 1100px;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+    article#gamesId h2{
+        padding-left: 40px;
+        color: #000;
+    }
+    ul#games{
+        list-style-type: none;
+        text-align: left;
+    }
+    nav.nav_list{
+        background-color: #fff;
+        flex-direction: row;
+    }
+    article.largeTopClass{
+        text-align: left;
+        width: 1100px;
+        margin: 0 auto;
+    }
+	article.textPage{
+        text-align: left;
+        width: 1100px;
+		padding-top: 10px;
+        margin: 0 auto;
+		margin-bottom: -10px;
+    }
+    hr{
+        width: 1100px;
+    }
+    div.main1{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+	div.main1 h3{
+		color: blue;
+	}
+	div.main2{
+        grid-template-columns: 50% 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+	div.main2 h3{
+        color: blue;
+    }    
+    footer{
+        width: 1100px;
+        margin: 0 auto;
+    }
+}

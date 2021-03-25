@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>www.gamesofnintendo.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css" />
+</head>
+
+<body>
+    <header class="header-container">
+        <h1>Games of Nintendo</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="games.html">Games</a> </li>
+                <li class="cart">
+                    <a href="cart.html">
+                        Varukorg<span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header><hr>
+
+    <section class="grid-container">
+            <article id="gamesId">
+                    <h2>All games using Fetch</h2>
+                    <ul id="games"></ul>
+            </article>
+    </section>
+
+    <footer><hr>
+        <nav class="nav_list">
+            <a href="link">
+                <img src="icons/icons8-twitter-50.png" alt="Twitter" class="header_icon"></a>
+            <a href="link">
+                <img src="icons/icons8-instagram-50.png" alt="Instagram" class="header_icon"></a>
+            <a href="link">
+                <img src="icons/icons8-facebook-50.png" alt="Facebook" class="header_icon"></a>
+        </nav>
+    </footer>
+
+<script src="js/fetchGames.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

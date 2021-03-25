@@ -1,0 +1,40 @@
+{
+  "games": [
+  {
+    "name": "Paper Mario The Origami King",
+    "tag": "PaperMarioTheOrigamiKing",
+    "price": 499,
+    "inCart": 0
+  },
+    {
+      "name": "Zelda Breath Of The Wild",
+      "tag": "ZeldaBreathOfTheWild",
+      "price": 599,
+      "inCart": 0
+    },
+    {
+      "name": "Animal Crossing",
+      "tag": "AnimalCrossing",
+      "price": 499,
+      "inCart": 0
+    },
+    {
+      "name": "Pokemon Brilliant Diamond",
+      "tag": "PokemonBrilliantDiamond",
+      "price": 499,
+      "inCart": 0
+    },
+    {
+      "name": "Link's Awakening",
+      "tag": "LinksAwakening",
+      "price": 499,
+      "inCart": 0
+    },
+    {
+      "name": "Mario Kart 8",
+      "tag": "MarioKart8",
+      "price": 499,
+      "inCart": 0
+    }
+  ]
+  }
